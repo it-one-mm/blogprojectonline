@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sample"
+            android:id="@+id/newsimage"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp"
+            android:layout_alignParentBottom="true">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:alpha="0.6"
+                android:background="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/newstitle"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hello"
+                android:gravity="fill"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/colorOnPrimary"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:gravity="fill"
+        android:id="@+id/newsauthor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableTint="@color/colorOnPrimary"
+        android:drawableLeft="@drawable/ic_account"
+        android:text="Author:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOnPrimary"/>
+    <TextView
+        android:id="@+id/newsdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_date"
+        android:drawableTint="@color/colorOnPrimary"
+        android:gravity="fill"
+        android:text="Published Date:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOnPrimary"/>
+</LinearLayout>
